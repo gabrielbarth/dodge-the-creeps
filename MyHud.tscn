@@ -1,7 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbmo0er31idmw"]
+[gd_scene load_steps=8 format=3 uid="uid://dbmo0er31idmw"]
 
 [ext_resource type="Script" uid="uid://cgp4seiw00jex" path="res://MyHUD.gd" id="1_5rxcv"]
 [ext_resource type="FontFile" uid="uid://6kl0c77yk0c" path="res://fonts/Xolonium-Regular.ttf" id="1_gtea7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rxcv"]
+bg_color = Color(0.699653, 0.699653, 0.699653, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjtm1"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2md5o"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 5
 
 [sub_resource type="InputEventAction" id="InputEventAction_5rxcv"]
 action = &"start_game"
@@ -59,6 +83,14 @@ offset_right = 100.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/hover = SubResource("StyleBoxFlat_5rxcv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yjtm1")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2md5o")
 shortcut = SubResource("Shortcut_yjtm1")
 text = "Start"
 
